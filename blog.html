@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@553&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+                            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+                            crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+
+
+<body>
+    <nav style="background-color: #423d3d; height: 100px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 40px; height: 100%;">
+            <ul style="display: flex; list-style: none; gap: 100px; align-items: center; margin: 0;">
+                <li>
+                    <img style="height: 90px;" src="logo dumbways.png" alt="ini logo? iya logo yang di kiri atas mentoks">
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="index.html nav-collapse">     <b>Home</b></a>
+                </li>
+                <li class="nav-link nav-collapse ">
+                    <a href="myproject.html"><b>My Project</b></a>
+                </li>
+            </ul>
+            <a href="contact.html" class="custom-button nav-collapse" ><b>Contact Me</b></a>
+                <i class="fa-solid fa-burger" style="color: #FFD43B; cursor: pointer;"id="hamburger-button" 
+                onclick="openHamburgerNav()"></i>
+        </div>
+    </nav>
+    
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html"      class="active"  ><b>Home        </b></a> 
+            <a href="myproject.html"  class="active"  ><b>My Project  </b></a>
+            <a href="contact.html"    class="active"  ><b>Contact Me  </b> </a>
+    
+    </div>
+</head>
+    
+            
+        <!-- bagian head sudah siap -->
+
+        <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="submitBlog(event)">
+                    <h1>Create Post Blog</h1>
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="inputTitle">
+                    </div>
+                    <div>
+                        <label for="content">Content</label>
+                        <textarea id="inputContent"></textarea>
+                    </div>
+                    <div>
+                        <label for="image">Upload Image</label>
+                        <input type="file" id="inputImage">
+                    </div>
+                    <div class="button-input">
+                        <button>Post Blog</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr class="line">
+        <div id="content" class="blog-list">
+
+        </div>
+    </div>
+
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+</html>
+        
+
+        
